@@ -229,7 +229,7 @@ void GDMono::initialize() {
 
 	if (!c_assembly_rootdir || !c_config_dir || !DirAccess::exists(c_assembly_rootdir) || !DirAccess::exists(c_config_dir)) {
 		Vector<const char *> locations;
-		locations.push_back("/Library/Frameworks/Mono.framework/Versions/Current/");
+		locations.push_back("/Library/Frameworks/Mono.framework/Versions/5.18.1/");
 		locations.push_back("/usr/local/var/homebrew/linked/mono/");
 
 		for (int i = 0; i < locations.size(); i++) {

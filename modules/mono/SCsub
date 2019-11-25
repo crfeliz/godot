@@ -121,7 +121,7 @@ def find_nuget_unix():
 
     hint_dirs = ['/opt/novell/mono/bin']
     if sys.platform == 'darwin':
-        hint_dirs = ['/Library/Frameworks/Mono.framework/Versions/Current/bin', '/usr/local/var/homebrew/linked/mono/bin'] + hint_dirs
+        hint_dirs = ['/Library/Frameworks/Mono.framework/Versions/5.18.1/bin', '/usr/local/var/homebrew/linked/mono/bin'] + hint_dirs
 
     for hint_dir in hint_dirs:
         hint_path = os.path.join(hint_dir, 'nuget')
@@ -192,7 +192,7 @@ def find_msbuild_unix(filename):
 
     hint_dirs = ['/opt/novell/mono/bin']
     if sys.platform == 'darwin':
-        hint_dirs = ['/Library/Frameworks/Mono.framework/Versions/Current/bin', '/usr/local/var/homebrew/linked/mono/bin'] + hint_dirs
+        hint_dirs = ['/Library/Frameworks/Mono.framework/Versions/5.18.1/bin', '/usr/local/var/homebrew/linked/mono/bin'] + hint_dirs
 
     for hint_dir in hint_dirs:
         hint_path = os.path.join(hint_dir, filename)

@@ -158,7 +158,7 @@ def configure(env):
 
         if not mono_root and is_apple:
             # Try with some known directories under OSX
-            hint_dirs = ['/Library/Frameworks/Mono.framework/Versions/Current', '/usr/local/var/homebrew/linked/mono']
+            hint_dirs = ['/Library/Frameworks/Mono.framework/Versions/5.18.1', '/usr/local/var/homebrew/linked/mono']
             for hint_dir in hint_dirs:
                 if os.path.isdir(hint_dir):
                     mono_root = hint_dir

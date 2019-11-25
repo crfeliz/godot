@@ -56,7 +56,7 @@ void godot_icall_BuildInstance_ExitCallback(MonoString *p_solution, MonoString *
 static Vector<const char *> _get_msbuild_hint_dirs() {
 	Vector<const char *> ret;
 #ifdef OSX_ENABLED
-	ret.push_back("/Library/Frameworks/Mono.framework/Versions/Current/bin/");
+	ret.push_back("/Library/Frameworks/Mono.framework/Versions/5.18.1/bin/");
 	ret.push_back("/usr/local/var/homebrew/linked/mono/bin/");
 #endif
 	ret.push_back("/opt/novell/mono/bin/");
